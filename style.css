@@ -401,11 +401,12 @@ background-color: #ffffff;
 
 flex: 0 0 45%;
 max-width: 50%;
-padding-right: 20px;
+padding-right: 30px;
 }
 
 .skills h1{
-	border-bottom:2px solid #e6e861;
+	border-bottom:4px solid #31d4d4;
+	max-width: calc(70% - 100px );
 	}
 
 .skills .img{
@@ -422,6 +423,67 @@ width: 100%;
 display: block;
 
 }
+
+
+.skills .skills-content .section-title p{
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+color: #838383;
+margin: 15px 0 20px;
+}
+
+.skills .skills-content .skill-box{
+
+flex: 0 0 100%;
+max-width: 100%;
+margin-bottom: 20px;
+}
+
+
+.skills .skills-content .skill-box h6{
+font-size: 16px;
+font-weight: 500;
+color: #000000;
+margin: 0 0 8px;
+}
+
+
+.skills .skills-content .skill-box .skill-bar{
+height: 6px;
+background-color: #eeeeee;
+position: relative;
+}
+
+
+.skills .skills-content .skill-box .skill-bar .skill-bar-in{
+background-color: #febd02;
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+}
+
+/*
+
+.skills .skills-content .skill-box .skill-bar .skill-bar-in{
+background-color: #ff0000;
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+}
+*/
+
+.skills .skills-content .skill-box .skill-bar .skill-bar-in span{
+color: #838383;
+font-size: 16px;
+font-weight: 400;
+position: absolute;
+right: 0;
+top: -30px;
+}
+
 
 
 
