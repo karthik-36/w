@@ -485,6 +485,21 @@ top: -30px;
 }
 
 
+.contact-us{
+padding: 100px 0px;
+background-color: #f5f8fd;
+}
 
+.contact-us .container{
+background-color: red; /* for visualization purposes */
+  text-align: center;
 
+  left: 1000px;
+}
 
+.contact-us .section-title{
+	position: absolute;
+background-color: blue; /* for visualization purposes */
+  text-align: center;
+  left: 40%;
+}
