@@ -487,19 +487,31 @@ top: -30px;
 
 .contact-us{
 padding: 100px 0px;
-background-color: #f5f8fd;
+background-color: #f4f7fc;
 }
 
 .contact-us .container{
-background-color: red; /* for visualization purposes */
+ /* for visualization purposes */
   text-align: center;
-
   left: 1000px;
 }
 
 .contact-us .section-title{
-	position: absolute;
-background-color: blue; /* for visualization purposes */
+	
   text-align: center;
-  left: 40%;
+  border-bottom: 4px solid #febd02;
+  margin-bottom: 50px;
+margin-left: 35%;
+}
+
+.contact-us .section-title h1{
+	font-weight: bold;
+	font-size: 33px;
+  
+}
+
+.contact-us .contact-form{
+background-color: #d5d5d5;
+flex: 0 0 100%;
+
 }
