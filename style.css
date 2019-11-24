@@ -323,16 +323,7 @@ position: absolute;
     border-bottom: 4px solid #febd01; /* This creates the border. Replace black with whatever color you want. */
 }
 
-.skills h1:before{
-content: '';
-left: 0;
-height: 3px;
-background-color: #febd01;
-position: absolute;
- bottom: 0px;
- right: 30%;
- bottom: 1px 1px 10px;
-}
+
 
 
 .text-uppercase{
