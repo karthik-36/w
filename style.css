@@ -2,6 +2,17 @@
 
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
+
+html,body
+{
+	scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body{
 margin: 0;
 font-family: 'Poppins', sans-serif;
@@ -26,13 +37,14 @@ margin: auto;
 }
 
 header{
-
+background-color: #0c0c17;
 	position: absolute;
 	left: 0px;
 	right: 0px;
 	border-bottom: 1px solid #423940;
 	padding: 0px 15px;
 	z-index: 10;
+	 opacity: 0.99;
 }
 
 header .row{
@@ -40,6 +52,35 @@ header .row{
 	align-items: center;
 }
 
+header.fixed{
+	background-color: #0c0c17;
+	position: fixed;
+	 opacity: 0.9;
+	 animation: fixHeader 1s ease;
+	 z-index: 100;
+}
+
+@keyframes fixHeader{
+0%{
+	transform: translateY(-100%) ;opacity:0;
+
+}
+
+100%{
+    transform: translateY(-%);
+
+}
+
+
+}
+
+header.fixed .navbar ul li a{
+color: #ffffff;
+}
+
+header.fixed .brand-name a{
+	color: #ffffff;
+}
 
 header .brand-name a{
 text-decoration: none;
@@ -90,12 +131,16 @@ display: block;
 header .navbar ul li a::before{
 content: '';
 height: 3px;
-background-color: #ffffff;
+background-color: #fab501;
 width: 0%;
 position: absolute;
 right: 0px;
 bottom: -1px;
 transition: all .5s ease;
+}
+
+header.fixed .navbar ul li a::before{
+background-color: #febd01;
 }
 
 header .navbar ul li a:hover::before{
@@ -134,6 +179,7 @@ background-image: url(images/hero/9.jpg);
 background-size: cover;
 background-position: center;
 padding: 15px;
+
 
 
 }
@@ -215,8 +261,9 @@ background-color: #ffffff;
 /* about me */
 
 .about-me{
-padding: 100px 15px;
+padding: 60px 10px;
 background-color: #ffffff;
+
 
 }
 
@@ -224,6 +271,8 @@ background-color: #ffffff;
 flex: 0 0 100%;
 max-width: 100%;
 margin-bottom: 35px;
+margin-left: 22px;
+
 }
 
 .about-me .section-title h1{
@@ -236,6 +285,18 @@ color: #000000;
 margin: 0 0 5px;
 position: relative;
 padding-bottom: 0px;
+}
+
+.about-me img{
+
+margin-top: 80px;
+margin-bottom: 50px;
+transform: scale(1.2) rotate(-90deg);
+margin-left: 0;
+border: 1px solid;
+box-shadow: 0 10px 10px #d5d5d5;
+
+
 }
 
 .about-me .section-title h1:before{
@@ -385,10 +446,6 @@ color: #000000;
 }
 
 /*
-
-
-
-
 */
 
 
@@ -405,7 +462,7 @@ padding-right: 30px;
 }
 
 .skills h1{
-	border-bottom:4px solid #31d4d4;
+	border-bottom:4px solid #febd01;
 	max-width: calc(70% - 100px );
 	}
 
@@ -465,7 +522,6 @@ height: 100%;
 }
 
 /*
-
 .skills .skills-content .skill-box .skill-bar .skill-bar-in{
 background-color: #ff0000;
 position: absolute;
@@ -488,30 +544,434 @@ top: -30px;
 .contact-us{
 padding: 100px 0px;
 background-color: #f4f7fc;
+
 }
 
 .contact-us .container{
- /* for visualization purposes */
-  text-align: center;
-  left: 1000px;
+ 
+
 }
 
 .contact-us .section-title{
 	
-  text-align: center;
+
   border-bottom: 4px solid #febd02;
   margin-bottom: 50px;
-margin-left: 35%;
+display: block;
+text-align: center;
+margin-right: 40%;
+margin-left: 40%;
+
+
+
+}
+
+.contact-us .section-title .git-cen{
+	
+
+text-align: center;
+
+
+
+}
+
+.contact-us  .row .getintouch{
+	
+	text-align: center;
+	display: block;
+
+
 }
 
 .contact-us .section-title h1{
 	font-weight: bold;
 	font-size: 33px;
+	text-align: center;
+	display: block;
   
 }
 
 .contact-us .contact-form{
-background-color: #d5d5d5;
+background-color: #ffffff;
 flex: 0 0 100%;
+max-width: 100%;
+padding: 40px;
+border: 2px solid #eeeeee;
 
 }
+
+.contact-us .contact-form .text{
+
+flex: 0 0 100%;
+max-width: 100%;
+padding-bottom: 20px;
+
+}
+
+.contact-us .contact-form .text h2{
+font-size: 25px;
+font-weight: 600;
+color: #000000;
+margin: 0;
+padding: 0;
+}
+
+.contact-us .contact-form .text p{
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+color: #838383;
+margin: 0px;
+}
+
+
+.contact-us .contact-form .space-between{
+justify-content: space-between;
+}
+
+
+.contact-us .contact-form .col-6{
+flex: 0 0 calc(50% - 15px);
+max-width: calc(50% - 15px);
+}
+
+
+.contact-us .contact-form .col-12{
+flex: 0 0 100%;
+max-width: 100%;
+}
+
+
+.contact-us .contact-form .col-12{
+flex: 0 0 100%;
+max-width: 100%;
+}
+ 
+
+ .contact-us .contact-form .form-control{
+height: 45px;
+width: 100%;
+margin-bottom: 15px;
+border: 1px solid #ced4da;
+padding: 6px 12px;
+font-size: 14px;
+font-weight: 400;
+}
+
+.contact-us .contact-form textarea.form-control{
+
+height: 140px;
+
+}
+
+ .contact-us .contact-form .form-control::placeholder{
+color: #838383;
+}
+
+
+.contact-us .contact-form .button{
+ flex: 0 0 100%;
+ max-width: 100%;
+ text-align: right;
+
+}
+
+
+ .contact-us .contact-form .button a{
+ 	border-radius: 4px;
+ 	color: #ffffff;
+ 
+ 	padding: 12px 25px;
+ 	text-decoration: none;
+ 	display: inline-block;
+ 	font-size: 14px;
+ 	text-transform: uppercase;
+ 	font-weight: 600;
+ 	transition: all .5s ease;
+ 	background-color: #febd01;
+ 	box-shadow: 0px 10px 10px #d5d5d5;
+}
+
+
+
+.contact-us .contact-form .button a:hover{
+ 	color: #ffffff;
+ 	background-color: #000000;
+}
+
+
+
+/*  footer section  */
+
+footer{
+padding: 80px 15px;
+background-color: #0c0c17;
+}
+
+footer .logo{
+
+	flex: 0 0 100%;
+	max-width: 100%;
+	text-align: center;
+	font-size: 45px;
+	color: #ffffff;
+	font-weight: 900
+
+}
+
+
+footer .social-links{
+	flex: 0 0 100%;
+	max-width: 100%;
+	text-align: center;
+	
+}
+
+
+footer .social-links a{
+color: #999999;
+text-decoration: none;
+display: inline-block;
+margin: 0px 12px;
+padding-top: 10px;
+}
+
+.copyright{
+border-color: #0c0c17;
+border-top:1px solid #1d1d27;
+background-color: #000000;
+padding: 15px;
+
+}
+
+.copyright p{
+color: #838383;
+margin: 0;
+text-align: center;
+font-weight: 400;
+font-size: 14px;
+}
+
+.ham-burger .fa{
+
+	font-size:20px;
+	height: 30px;
+	width: 35px;
+	background-color: #ffffff;
+	text-align: center;
+	cursor: pointer;
+	display: none;
+	border-radius: 3px;
+	color: #0000000;
+	line-height: 30px;
+	border: 1px solid #eeeeee;
+
+
+}
+
+
+@media(max-width: 991px){
+.home .home-content .block h1{
+font-size: 50px;
+}
+}
+
+@media(max-width: 767px){
+
+	.home .home-content .block h1{
+
+		font-size: 40px;
+	}
+
+
+
+	.home .home-content .block h3{
+		font-size: 25px;
+
+	}
+
+
+
+
+	.header{
+		padding: 15px;
+		position: fixed;
+		background-color: #ffffff;
+		border: none;
+		border-top: 1px solid #eeeeee;
+	}
+
+	header .brand-name a{
+		color: #ffffff;
+
+	}
+	
+	.ham-burger .fa{
+		display: inline-block;
+	}
+
+	.navbar{
+		position: absolute;
+		background-color: #000000;
+		width: 100%;
+		left: 0px;
+		top: 60px;
+		padding:15px;
+		border-top: 1px solid #eeeeee;
+		display: none;
+	}
+
+	.navbar .show{
+		display: block;
+	}
+
+	header .navbar ul li{
+	display: block;
+	margin-left: 0;
+
+	}
+
+	header .navbar ul li a{
+	line-height: 42px;
+	color: #ffffff;
+	}
+
+	header .navbar ul li a::before{
+	background-color: febd01;
+	}
+
+
+	.about-me .about-content .text{
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding-left: 0px; 
+
+	}
+
+
+	.about-me .about-content .img{
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 120px;
+		margin-top: 40px;
+
+	}
+
+
+	.services .service-content .box{
+			background-color: #ffffff;
+			padding: 30px;
+			flex: 0 0 100%;
+			max-width: 100%;
+	}
+
+	.skills .skills-content{
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding-right: 0px;
+
+	}
+
+	.skills .img{
+		flex: 0 0 100%;
+		max-width: 100%;
+
+	}
+
+
+	.contact-us .contact-form{
+		padding: 40px 20px;
+
+	}
+
+
+	.contact-us .contact-form .col-6{
+		flex: 0 0 100%;
+		max-width: 100%;
+
+	}
+
+	.about-me .about-content .text .info .list p{
+	
+		flex: 0 0 100%;
+
+	}
+
+
+
+/*
+	.about-me img{
+		margin-top: 40px;
+		margin-right: 10px;
+		margin-left: 2px;
+		box-shadow: 0 0 0;
+	}
+*/
+}
+
+
+@media(max-width: 500px){
+
+	.home .home-content .block h1{
+
+		font-size: 30px;
+	}
+
+
+
+	.home .home-content .block h3{
+		font-size: 20px;
+
+	}
+ 
+
+ .home .home-content .block {
+		padding-left: 20px;
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+<section>
+<video align="center" id="bgvideo" loop  autoplay="autoplay"  autoplay loop muted preload="auto">
+<source src="mp44loop.mp4" type="video/mp4"/>
+</video>  
+</section>
+<section id="banner">
+   
+</section>
+
+
+*/

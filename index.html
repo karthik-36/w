@@ -4,23 +4,29 @@
 	<title> karthik website</title>
 	<meta name="viewport" content="width=device-width , initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
 </head>
 <body>
 
+
+	<!-- header -->
 	<header>
 		<div class="container">
 			<div class="row">
 			<div class="brand-name">
 				<a href="" class="logo">karthik</a>
 			</div>
-
+			<div class="ham-burger">
+				<i class="fa fa-bars"></i>
+			</div>
 			<div class="navbar">
 				<ul>
-				    <li><a href="" class="active">Home</a></li>	      
-					<li><a href="">About</a></li>
-					<li><a href="">Skills</a></li>
-					<li><a href="">Projects</a></li>
-					<li><a href="">Contact</a></li>
+				    <li><a href="#home" class="active">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#exprience">Exprience</a></li>
+					<li><a href="#contact">Contact</a></li>
 
 				</ul>
 			</div>
@@ -31,7 +37,7 @@
 
 
 <!-- start home -->
-	<section class="home">
+	<section class="home" id="home">
 	
 		<div class="container">
 
@@ -54,7 +60,7 @@
 
 <!-- about section start -->
 
-<section class="about-me">
+<section class="about-me" id="about">
 	<div class="container">
 		<div class="row">
 			<div class="section-title">
@@ -68,12 +74,12 @@
 			<div class="about-content">
 				<div class="row">
 				<div class="img">
-					<img src="images/about-me.jpeg" alt="about-me">
+					<img src="images/about-me.jpg" alt="about-me">
 				</div>
 				<div class="text">
 					<h4>I'M Karthik Singh</h4>
 					<h6> A <span> FullStack developer </span> based in <span> India</span> </h6>
-					<p class="top-space"> I have kownledge in a vast varitey of technologies and can develop applications for various platforms. My best area would be building backend services.</p>
+					<p class="top-space"> I have kownledge in a vast varitey of technologies and can develop applications for various platforms. My best area would be building mobile applications and backend services.</p>
 					<div class="info">
 					<div class="list">
 					  <label>Birthday:</label>	
@@ -110,6 +116,8 @@
 					<div class="social-links">
 						<a href=""><i class="fa fa-linkedin"></i></a>
 
+						<a href=""><i class="fa fa-angellist"></i></a>
+
 					</div>
 
 
@@ -126,7 +134,7 @@
 
 
 <!-- start skills -->
-<section class="skills">
+<section class="skills" id="skills">
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="skills-content">
@@ -217,12 +225,42 @@
 </section>
 <!-- end skills -->
 
+
+
+
+
+<!-- Project section-->
+<section class="projects" id="projects">
+	
+</section>
+<!-- Project section end-->
+
+
+
+
+
+
+
+
+
+
+<!-- Exprience section-->
+<section class="exprience" id="exprience">
+	
+</section>
+<!-- Exprience section end-->
+
+
+
+
 <!-- start contact us -->
-<section class="contact-us">
+<section class="contact-us" id="contact">
 	<div class="container">
 		<div class="row">
-			<div class="section-title" id="wrapper">
-				<h1 id="yourtext">GET IN TOUCH</h1>
+			<div class="section-title">
+				<div class="git-cen">
+				<h1 class="getintouch">GET IN TOUCH</h1>
+			</div>
 			</div>
 		</div>
 		<div class="row">
@@ -233,23 +271,21 @@
 						<p>I am here to answer any question you have</p>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row space-between">
 					<div class="col-6">
-						<input type="text" class="form-contact" name="" placeholder="Name">
+						<input type="text" class="form-control" name="" placeholder="Name">
 					</div>
 					<div class="col-6">
-						<input type="text" class="form-contact" name="" placeholder="Name">
+						<input type="text" class="form-control" name="" placeholder="Name">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-12">
-						<textarea class="form-contact" placeholder="Your comment">
-							
-						</textarea>
+						<textarea class="form-control" placeholder="Your comment"></textarea>
 					</div>
 				</div>
 				<div class="row">
-					<div class="button">
+					<div class="button text-right">
 						<a href="">Get In Touch</a>
 					</div>
 				 </div>
@@ -260,14 +296,30 @@
 </section>
 <!-- end contact us -->
 
-<section>
-<video align="center" id="bgvideo" loop  autoplay="autoplay"  autoplay loop muted preload="auto">
-<source src="mp44loop.mp4" type="video/mp4"/>
-</video>  
+
+<!-- start footer -->
+<footer>
+<div class="container">
+	<div class="row">
+		<div class="logo">
+			Karthik
+		</div>
+		<div class="social-links">
+			<a href=""><i class="fa fa-linkedin"></i></a>
+			<a href=""><i class="fa fa-angellist"></i></a>
+
+		</div>
+	</div>
+</div>
+</footer>
+<!-- end footer -->
+<section class="copyright">
+	<div>
+		<p>&copy; 2019 copyright all reserved</p>
+
+	</div>
 </section>
-<section id="banner">
-   
-</section>
+
 
 </body>
 </html>
