@@ -48,6 +48,82 @@ hamBurger.addEventListener("click",function(){
 	document.querySelector(".navbar").classList.toggle("show");
 
 })
+
+
+
+
+
+var onresize = function() {
+
+
+   width = document.body.clientWidth;
+   height = document.body.clientHeight;
+
+  if(width<531){
+	document.getElementById("p1").setAttribute("height",200);
+	document.getElementById("p2").setAttribute("height",250);
+	document.getElementById("p3").setAttribute("height",250);
+	document.getElementById("p4").setAttribute("height",250);
+	document.getElementById("p5").setAttribute("height",250);
+	document.getElementById("p6").setAttribute("height",300);
+  }else{
+
+  		document.getElementById("p1").setAttribute("height",490);
+	document.getElementById("p2").setAttribute("height",490);
+	document.getElementById("p3").setAttribute("height",490);
+	document.getElementById("p4").setAttribute("height",490);
+	document.getElementById("p5").setAttribute("height",490);
+	document.getElementById("p6").setAttribute("height",600);
+
+
+  }
+
+
+}
+window.addEventListener("resize", onresize);
+
+
+
+//console.log("innder "+window.innerWidth);
+
+//if(window.innerWidth<731){
+//document.getElementById("p1").setAttribute("height",20);
+//}
+
+
+
+console.log(screen.width);
+if(screen.width<550){
+	document.getElementById("p1").setAttribute("height",250);
+	document.getElementById("p2").setAttribute("height",250);
+	document.getElementById("p3").setAttribute("height",250);
+	document.getElementById("p4").setAttribute("height",250);
+	document.getElementById("p5").setAttribute("height",250);
+	document.getElementById("p6").setAttribute("height",300);
+}
+
+/*
+
+if(screen.width>550){
+	document.getElementById("p1").setAttribute("height",490);
+	document.getElementById("p2").setAttribute("height",490);
+	document.getElementById("p3").setAttribute("height",490);
+	document.getElementById("p4").setAttribute("height",490);
+	document.getElementById("p5").setAttribute("height",490);
+	document.getElementById("p6").setAttribute("height",600);
+
+	
+}
+
+
+*/
+
+
+
+
+
+
+
 }
 
  
