@@ -1,6 +1,12 @@
 ///header
 
-
+document.onreadystatechange = function(e)
+{
+    if (document.readyState === 'complete')
+    {
+    
+    }
+};
 
 console.log("alive");
 window.onscroll = function(){
@@ -18,6 +24,9 @@ window.onscroll = function(){
 
 
 window.onload = function(){
+
+
+
 var navbar = document.querySelector(".navbar");
 		a=navbar.querySelectorAll("a");
    console.log("helloonload " +a);
@@ -58,6 +67,7 @@ var onresize = function() {
 
    width = document.body.clientWidth;
    height = document.body.clientHeight;
+   console.log("width " + width);
 
   if(width<531){
 	document.getElementById("p1").setAttribute("height",200);
@@ -74,9 +84,49 @@ var onresize = function() {
 	document.getElementById("p4").setAttribute("height",490);
 	document.getElementById("p5").setAttribute("height",490);
 	document.getElementById("p6").setAttribute("height",600);
-
-
   }
+
+
+
+
+
+/////////// video edit      <source id="videosource" src="final1.mp4" type="video/mp4"/>
+
+
+//console.log("video is : "+video);
+
+//source.setAttribute('src', 'final1.mp4');
+
+//video.appendChild(source);
+//video.play();
+   
+if(width<1000){
+	 var video = document.getElementById('video');
+   video.src = "finalsmall.mp4";
+   video.play();
+}else if (width>=1000 && width<=1370) {
+var video = document.getElementById('video');
+   video.src = "finalmedium.mp4";
+   video.play();
+}else if(width>1370){
+var video = document.getElementById('video');
+   video.src = "final1.mp4";
+   video.play();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////// video end
+
 
 
 }
@@ -101,6 +151,21 @@ if(screen.width<550){
 	document.getElementById("p5").setAttribute("height",250);
 	document.getElementById("p6").setAttribute("height",300);
 }
+
+if(screen.width<1000){
+	 var video = document.getElementById('video');
+   video.src = "finalsmall.mp4";
+   video.play();
+}else if (screen.width>=1000 && width<=1370) {
+var video = document.getElementById('video');
+   video.src = "finalmedium.mp4";
+   video.play();
+}else if(screen.width>1370){
+var video = document.getElementById('video');
+   video.src = "final1.mp4";
+   video.play();
+}
+
 
 /*
 
@@ -127,20 +192,3 @@ if(screen.width>550){
 }
 
  
-
-
-//navbar links
-               /*
-var navbar = document.querySelector("header");
-console.log(navbar);
-a = navbar.querySelectorAll("a");
-
-a.forEach(function(element){
-element.addEventListener("click",function(){
-	for (var i = 0; i < a.length; i++) {
-		a[i].classList.remove("active");
-	}
-	this.classList.add("active");
-  })
-})
-*/

@@ -44,7 +44,7 @@ background-color: #0c0c17;
 	border-bottom: 1px solid #423940;
 	padding: 0px 15px;
 	z-index: 10;
-	 opacity: 0.69;
+	 opacity: 0.95;
 }
 
 header .row{
@@ -175,17 +175,36 @@ left: 0;
 
 .home{
   min-height: 100vh;
+  /*
 background-image: url(images/hero/pw2.gif); 
+
+*/
 background-size: cover;
 background-position: center;
-padding: 15px;
+
 
 
 
 }
 
+.video{
+ max-width: 100%;
+  height: auto;
+}
+
  .home .full-screen{
 min-height: 100vh;
+}
+
+
+.home   .container{
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: 12%;
+	padding-top: 5%;
+
 }
 
 .home .home-content{
@@ -205,10 +224,13 @@ min-height: 100vh;
 	padding-left: 35px;
 	border-left: 5px solid #ffffff;
 	margin-top: 50px;
+	background-color: rgba(0, 0, 0, 0.2);
+
 
 }
   
 .home .home-content .block h6{
+	z-index: 100;
 color: #ffffff;
 font-size: 18px;
 font-weight: 500;
@@ -998,7 +1020,7 @@ font-size: 50px;
 
 .home{
 
-background-image: url(images/hero/10.jpg); 
+/*background-image: url(images/hero/10.jpg); */
 
 }
 
@@ -1249,7 +1271,7 @@ width: 100%;
 /*
 <section>
 <video align="center" id="bgvideo" loop  autoplay="autoplay"  autoplay loop muted preload="auto">
-<source src="mp44loop.mp4" type="video/mp4"/>
+<source src="final1.mp4" type="video/mp4"/>
 </video>  
 </section>
 <section id="banner">
