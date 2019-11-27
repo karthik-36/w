@@ -1,5 +1,7 @@
 ///header
-
+var isSmall =false;
+var isMedium = false;
+var isLarge = false;
 document.onreadystatechange = function(e)
 {
     if (document.readyState === 'complete')
@@ -54,8 +56,8 @@ var navbar = document.querySelector(".navbar");
 const hamBurger = document.querySelector(".ham-burger");
 hamBurger.addEventListener("click",function(){
 	console.log("clicked");
-	document.querySelector(".navbar").classList.toggle("show");
-
+	//document.querySelector(".navbar").classList.toggle("show");
+document.querySelector(".navbar").setAttribute("display","none");
 })
 
 
@@ -86,46 +88,51 @@ var onresize = function() {
 	document.getElementById("p6").setAttribute("height",600);
   }
 
+////////////video
+
+var videocontainer = document.getElementById('video');
+var videosource = document.getElementById('videosource');
+var small = 'finalsmall.mp4';
+var medium = 'finalmedium.mp4';
+var large = 'n.mp4';
 
 
+if(width<=600 && isSmall==false){
+	console.log("trigger small");
+    videocontainer.pause();
+    videosource.setAttribute('src', small);
+    videocontainer.load();
+    videocontainer.play();
+    isSmall = true;
+    isMedium = false;
+    isLarge = false;
+}
+else if(width <= 1300 && width>= 600 && isMedium == false){
+	console.log("trigger medium");
+    videocontainer.pause();
+    videosource.setAttribute('src', medium);
+    videocontainer.load();
+    videocontainer.play();
+    isMedium = true;
+    isSmall = false;
+    isLarge = false;
 
+}else if(width >= 1300 && isLarge == false){
+    console.log("trigger large");
+    videocontainer.pause();
+    videosource.setAttribute('src', large);
+    videocontainer.load();
+    videocontainer.play();
+    isLarge = true;
+    isSmall = false;
+    isMedium = false;
 
-/////////// video edit      <source id="videosource" src="final1.mp4" type="video/mp4"/>
-
-
-//console.log("video is : "+video);
-
-//source.setAttribute('src', 'final1.mp4');
-
-//video.appendChild(source);
-//video.play();
-   
-if(width<1000){
-	 var video = document.getElementById('video');
-   video.src = "finalsmall.mp4";
-   video.play();
-}else if (width>=1000 && width<=1370) {
-var video = document.getElementById('video');
-   video.src = "finalmedium.mp4";
-   video.play();
-}else if(width>1370){
-var video = document.getElementById('video');
-   video.src = "final1.mp4";
-   video.play();
 }
 
 
 
 
 
-
-
-
-
-
-
-
-/////////////////// video end
 
 
 
@@ -133,12 +140,6 @@ var video = document.getElementById('video');
 window.addEventListener("resize", onresize);
 
 
-
-//console.log("innder "+window.innerWidth);
-
-//if(window.innerWidth<731){
-//document.getElementById("p1").setAttribute("height",20);
-//}
 
 
 
@@ -151,12 +152,35 @@ if(screen.width<550){
 	document.getElementById("p5").setAttribute("height",250);
 	document.getElementById("p6").setAttribute("height",300);
 }
+}
+
+
+
+
+
+
+
+
+
+
+//console.log("innder "+window.innerWidth);
+
+//if(window.innerWidth<731){
+//document.getElementById("p1").setAttribute("height",20);
+//}
+
+
+
+
+
+/*
+
 
 if(screen.width<1000){
 	 var video = document.getElementById('video');
    video.src = "finalsmall.mp4";
    video.play();
-}else if (screen.width>=1000 && width<=1370) {
+}else if (screen.width>=1000 && screen.width<=1370) {
 var video = document.getElementById('video');
    video.src = "finalmedium.mp4";
    video.play();
@@ -165,7 +189,7 @@ var video = document.getElementById('video');
    video.src = "final1.mp4";
    video.play();
 }
-
+*/
 
 
 
@@ -185,12 +209,52 @@ if(screen.width>550){
 
 */
 
+/////////// video edit      <source id="videosource" src="final1.mp4" type="video/mp4"/>
 
 
+//console.log("video is : "+video);
 
+//source.setAttribute('src', 'final1.mp4');
 
-
-
+//video.appendChild(source);
+//video.play();
+/*
+   
+if(width<1000){
+	 var video = document.getElementById('video');
+   video.src = "finalsmall.mp4";
+   video.play();
+}else if (width>=1000 && width<=1370) {
+var video = document.getElementById('video');
+   video.src = "finalmedium.mp4";
+   video.play();
+}else if(width>1370){
+var video = document.getElementById('video');
+   video.src = "final1.mp4";
+   video.play();
 }
+document.getElementById("video").height = "500";
+ var video = document.getElementById('video');
+ console.log("video height " +video.videoHeight); // returns the intrinsic height of the video
+console.log("video width " +video.videoWidth);
+ video.videoHeight = 500;
+  video.videoWidth = 500;
+
+*/
+
+
+
+
+
+
+
+
+/////////////////// video end
+
+
+
+
+
+
 
  
