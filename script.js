@@ -143,7 +143,7 @@ window.addEventListener("resize", onresize);
 
 
 
-console.log(screen.width);
+console.log("window width" + window.innerWidth);
 if(screen.width<550){
 	document.getElementById("p1").setAttribute("height",250);
 	document.getElementById("p2").setAttribute("height",250);
@@ -152,6 +152,46 @@ if(screen.width<550){
 	document.getElementById("p5").setAttribute("height",250);
 	document.getElementById("p6").setAttribute("height",300);
 }
+
+
+
+
+/////////////////////////
+
+
+var videocontainer = document.getElementById('video');
+var videosource = document.getElementById('videosource');
+var small = 'finalsmall.mp4';
+var medium = 'finalmedium.mp4';
+var large = 'n.mp4';
+
+
+if(window.innerWidth >= 1300 ){
+   console.log(" set trigger large");
+    videocontainer.pause();
+    videosource.setAttribute('src', large);
+    videocontainer.load();
+    videocontainer.play();
+
+}else if(window.innerWidth >= 600 && window.innerWidth <= 1300 ){
+	console.log(" set trigger medium");
+    videocontainer.pause();
+    videosource.setAttribute('src', medium);
+    videocontainer.load();
+    videocontainer.play();
+
+}else{
+	console.log(" set trigger small");
+    videocontainer.pause();
+    videosource.setAttribute('src', small);
+    videocontainer.load();
+    videocontainer.play();
+
+}
+
+
+////////////////////////
+
 }
 
 
