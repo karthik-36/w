@@ -28,7 +28,7 @@ font-family: 'Poppins', sans-serif;
 	position: fixed;
 width: 100%;
 height: 100vh;
-background: #5555aa url('load.gif') no-repeat center;
+background: #00eeee url('load.gif') no-repeat center;
 z-index: 300;
 
 
