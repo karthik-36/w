@@ -27,7 +27,9 @@ window.onscroll = function(){
 
 window.onload = function(){
 
+var preloader = document.getElementById('loading');
 
+	preloader.style.display = 'none';
 
 var navbar = document.querySelector(".navbar");
 		a=navbar.querySelectorAll("a");
