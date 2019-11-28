@@ -28,7 +28,7 @@ font-family: 'Poppins', sans-serif;
 	position: fixed;
 width: 100%;
 height: 100vh;
-background: #00eeee url('load.gif') no-repeat center;
+background: #bee3f8 url('load.gif') no-repeat center;
 z-index: 300;
 
 
@@ -767,6 +767,7 @@ color: #838383;
 
 .projects{
 padding: 20px 0px;
+background-color: ##edf2f7;
 
 }
 
@@ -899,7 +900,7 @@ width: 50%;
 
 
 .exprience{
-background-color:rgba(0,5,5,0.06); 
+background-color:#ebf4ff; 
 	padding: 50px 55px;
 }
 
@@ -946,13 +947,22 @@ flex-wrap: wrap;
     border-left: 4px solid #aeaeae; 
 }
 
-.exprience .exp-block .text h1{
+.exprience .exp-block .text .app-dev{
     padding-left: 20px;
      
  
 }
 
 
+.exprience .exp-block .text h1{
+    
+     
+ 
+}
+
+.exprience .exp-block .text span{
+ color: #febd01;
+}
 
 
 
@@ -1122,7 +1132,17 @@ font-size: 50px;
 
 @media(max-width: 767px){
 
-	
+.exprience {
+    
+    padding: 54px 10px;
+}
+
+	.exprience .exp-block .text {
+    
+  
+    margin-top: 50px;
+   
+}
 
 .video {
     max-width: 100%;
@@ -1140,27 +1160,27 @@ min-height: 75vh;
 }
 
 .project1 {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .project2 {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .project3 {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .project4 {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .project5 {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .project6 {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .projects {
@@ -1320,6 +1340,7 @@ width: 100%;
     margin: 0 0 17px;
 }
 
+
 /*
 	.about-me img{
 		margin-top: 40px;
@@ -1332,6 +1353,35 @@ width: 100%;
 
 
 @media(max-width: 500px){
+
+.exprience .exp-block .text h1 {
+	font-size: 20px;
+}
+
+.exprience .exp-block .text h3 {
+	font-size: 16px;
+}
+
+.exprience .exp-block .text p {
+	font-size: 14px;
+}
+
+.exprience {
+    
+    padding: 54px 5px;
+}
+
+.exprience .exp-block .text {
+    flex: 0 0 90.66%;
+    max-width: 90.66%;
+  
+}
+
+.exprience .work {
+    width: 100px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
 
 
 	.home .home-content .block {
