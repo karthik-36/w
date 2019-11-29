@@ -505,6 +505,25 @@ color: #000000;
 /*
 */
 
+.web{
+	width: 100%;
+}
+
+.languages{
+	width: 100%;
+}
+
+.design{
+	width: 100%;
+}
+
+.cloud{
+	width: 100%;
+}
+
+.tool{
+	width: 100%;
+}
 
 .skills{
 padding: 60px 15px;
@@ -557,7 +576,8 @@ margin: 15px 0 20px;
 
 flex: 0 0 100%;
 max-width: 100%;
-margin-bottom: 20px;
+margin-bottom: 18px;
+
 }
 
 
@@ -583,6 +603,11 @@ left: 0;
 top: 0;
 height: 100%;
 }
+
+
+
+
+
 
 /*
 .skills .skills-content .skill-box .skill-bar .skill-bar-in{
