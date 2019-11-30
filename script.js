@@ -144,16 +144,34 @@ else if(width <= 1300 && width>= 600 && isMedium == false){
 if(width<750){
 
 	var x = document.getElementById("skill-image");
- 
     x.style.display = "none";
 
+
+    var i1 = document.getElementById("img1");
+    var i2 = document.getElementById("img2");
+    var i3 = document.getElementById("img3");
+    var i4 = document.getElementById("img4");
+    i1.style.display = "block";
+    i2.style.display = "block";
+    i3.style.display = "block";
+    i4.style.display = "block";
 
 
 }
 else{
 var x = document.getElementById("skill-image");
- 
     x.style.display = "block";
+
+    var i1 = document.getElementById("img1");
+    var i2 = document.getElementById("img2");
+    var i3 = document.getElementById("img3");
+    var i4 = document.getElementById("img4");
+    i1.style.display = "none";
+    i2.style.display = "none";
+    i3.style.display = "none";
+    i4.style.display = "none";
+
+
 
 }
 
@@ -218,6 +236,44 @@ if(window.innerWidth >= 1300 ){
 
 
 ////////////////////////
+
+
+if(window.innerWidth<750){
+
+	var x = document.getElementById("skill-image");
+    x.style.display = "none";
+
+
+    var i1 = document.getElementById("img1");
+    var i2 = document.getElementById("img2");
+    var i3 = document.getElementById("img3");
+    var i4 = document.getElementById("img4");
+    i1.style.display = "block";
+    i2.style.display = "block";
+    i3.style.display = "block";
+    i4.style.display = "block";
+
+
+}
+else{
+var x = document.getElementById("skill-image");
+    x.style.display = "block";
+
+    var i1 = document.getElementById("img1");
+    var i2 = document.getElementById("img2");
+    var i3 = document.getElementById("img3");
+    var i4 = document.getElementById("img4");
+    i1.style.display = "none";
+    i2.style.display = "none";
+    i3.style.display = "none";
+    i4.style.display = "none";
+
+
+
+}
+
+
+
 
 }
 
