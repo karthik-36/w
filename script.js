@@ -21,6 +21,12 @@ window.onscroll = function(){
 		}
 	}
 
+
+
+
+
+
+
 }
 
 
@@ -131,6 +137,25 @@ else if(width <= 1300 && width>= 600 && isMedium == false){
 
 }
 
+
+///////////////
+
+
+if(width<750){
+
+	var x = document.getElementById("skill-image");
+ 
+    x.style.display = "none";
+
+
+
+}
+else{
+var x = document.getElementById("skill-image");
+ 
+    x.style.display = "block";
+
+}
 
 
 
