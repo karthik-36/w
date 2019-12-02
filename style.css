@@ -1287,8 +1287,8 @@ font-size: 50px;
 .video {
     max-width: 100%;
     height: auto;
-    border-top: 100px solid #101010;
-    border-bottom: 100px solid #101010;
+    border-top: 0px solid #101010;
+    border-bottom: 0px solid #101010;
 }
 
 
