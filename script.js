@@ -1,4 +1,19 @@
 ///header
+/*
+$(document).ready(function() {
+    // all custom jQuery will go here
+
+
+$(function() {
+$('#registerform').submit(function(event) {
+    event.preventDefault();
+    $(this).submit();
+    }); 
+});
+
+});
+*/
+
 var isSmall =false;
 var isMedium = false;
 var isLarge = false;

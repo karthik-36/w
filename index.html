@@ -8,6 +8,15 @@
 
 	 <link rel="stylesheet" type="text/css" href="animate.css">
 	<script src="script.js"></script>
+	<script src="jquery-3.4.1.min.js"></script>
+	<script>
+$(document).ready(function(){
+ $('#gform').submit(function (evt) {
+   evt.preventDefault(); //prevents the default action
+   console.log("hellooo email");
+});
+});
+</script>
 </head>
 <body >
 
@@ -727,7 +736,7 @@
 <!-- start contact us -->
 <section class="contact-us" id="contact">
 	<div class="container">
-		<div class="row1">
+		<div class="row">
 			<div class="section-title">
 				<div class="git-cen">
 				<h1 class="getintouch">GET IN TOUCH</h1>
@@ -742,25 +751,45 @@
 						<p>I am here to answer any question you have</p>
 					</div>
 				</div>
+
+
+
+  <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="from_email@example.com"
+          action="https://script.google.com/macros/s/AKfycbxYugr7M_ZpzXPajAfrB8ZmqSQruiHT1UR5N8trkOBHTresXOE/exec">
+
+		<div class="form-container">
 				<div class="row space-between">
 					<div class="col-6">
-						<input type="text" class="form-control" name="" placeholder="Email">
+						<input class="form-control "id="email" name="email" type="email" value=""
+               required placeholder="your.name@email.com">
 					</div>
 					<div class="col-6">
-						<input type="text" class="form-control" name="" placeholder="Name">
+						<input class="form-control" id="name" name="name" placeholder="Your Name" >
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-12">
-						<textarea class="form-control" placeholder="Your comment"></textarea>
+						<textarea class="form-control" id="message" name="message" rows="10"
+                  placeholder="Tell us what's on your mind..."></textarea>
 					</div>
 				</div>
+				
 				<div class="row">
 					<div class="button text-right">
-						<a href="">Get In Touch</a>
+
+						<button class="send-button">
+            Get In Touch
+                         </button>
+
+					<!--	<a type="submit" class="button-success pure-button button-xlarge" onclick="parentNode.submit();" href="">Get In Touch</a> -->
 					</div>
 				 </div>
-			</div>
+				</div>
+		</div>
+
+	</form>
+
+
 		</div>
 	</div>
 
