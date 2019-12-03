@@ -79,7 +79,8 @@ var navbar = document.querySelector(".navbar");
 const hamBurger = document.querySelector(".ham-burger");
 hamBurger.addEventListener("click",function(){
 	console.log("clicked");
-	//document.querySelector(".navbar").classList.toggle("show");
+	document.querySelector(".navbar").classList.toggle("show");
+  document.getElementById(".navbar").classList.toggle("show");
 document.querySelector(".navbar").setAttribute("display","none");
 })
 
