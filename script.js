@@ -226,21 +226,21 @@ var medium = 'finalmedium.mp4';
 var large = 'n.mp4';
 
 
-if(window.innerWidth >= 1300 ){
+if(window.innerWidth >= 1300 && isLarge == false){
    console.log(" set trigger large");
     videocontainer.pause();
     videosource.setAttribute('src', large);
     videocontainer.load();
     videocontainer.play();
 
-}else if(window.innerWidth >= 600 && window.innerWidth <= 1300 ){
+}else if(window.innerWidth >= 600 && window.innerWidth <= 1300 && isMedium == false){
 	console.log(" set trigger medium");
     videocontainer.pause();
     videosource.setAttribute('src', medium);
     videocontainer.load();
     videocontainer.play();
 
-}else{
+}else if(isSmall == false){
 	console.log(" set trigger small");
     videocontainer.pause();
     videosource.setAttribute('src', small);
