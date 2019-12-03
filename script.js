@@ -119,7 +119,7 @@ var small = 'finalsmall.mp4';
 var medium = 'finalmedium.mp4';
 var large = 'n.mp4';
 
-
+/*
 if(width<=600 && isSmall==false){
 	console.log("trigger small");
     videocontainer.pause();
@@ -152,7 +152,7 @@ else if(width <= 1300 && width>= 600 && isMedium == false){
 
 }
 
-
+*/
 ///////////////
 
 
@@ -225,7 +225,7 @@ var small = 'finalsmall.mp4';
 var medium = 'finalmedium.mp4';
 var large = 'n.mp4';
 
-
+/*
 if(window.innerWidth >= 1300 ){
    console.log(" set trigger large");
     videocontainer.pause();
@@ -248,7 +248,7 @@ if(window.innerWidth >= 1300 ){
     videocontainer.play();
 
 }
-
+*/
 
 ////////////////////////
 
