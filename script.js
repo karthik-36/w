@@ -92,7 +92,7 @@ var onresize = function() {
 
    width = document.body.clientWidth;
    height = document.body.clientHeight;
-   console.log("width " + width);
+   console.log("width1 " + width);
 
   if(width<531){
 	document.getElementById("p1").setAttribute("height",200);
@@ -232,6 +232,9 @@ if(window.innerWidth >= 1300 && isLarge == false){
     videosource.setAttribute('src', large);
     videocontainer.load();
     videocontainer.play();
+    isLarge = true;
+    isSmall = false;
+    isMedium = false;
 
 }else if(window.innerWidth >= 600 && window.innerWidth <= 1300 && isMedium == false){
 	console.log(" set trigger medium");
@@ -239,6 +242,9 @@ if(window.innerWidth >= 1300 && isLarge == false){
     videosource.setAttribute('src', medium);
     videocontainer.load();
     videocontainer.play();
+    isLarge = false;
+    isSmall = true;
+    isMedium = false;
 
 }else if(window.innerWidth <=600 && isSmall == false){
 	console.log(" set trigger small");
@@ -246,6 +252,9 @@ if(window.innerWidth >= 1300 && isLarge == false){
     videosource.setAttribute('src', small);
     videocontainer.load();
     videocontainer.play();
+    isLarge = false;
+    isSmall = false;
+    isMedium = true;
 
 }
 

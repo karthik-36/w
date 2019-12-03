@@ -945,6 +945,7 @@ width: 50%;
 .projects .videos .project1{
 margin-bottom: 35px;
 	padding-bottom: 35px;
+	padding-top: 20px;
 	background-color: rgba(0,0,0,0.1);
 	z-index: -1;
 	
