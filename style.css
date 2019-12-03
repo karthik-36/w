@@ -600,7 +600,7 @@ margin: 15px 0 20px;
 flex: 0 0 100%;
 max-width: 100%;
 margin-bottom: 18px;
-
+overflow-x:hidden;
 }
 
 
@@ -613,9 +613,10 @@ margin: 0 0 8px;
 
 
 .skills .skills-content .skill-box .skill-bar{
-height: 6px;
+height: 7px;
 background-color: #eeeeee;
 position: relative;
+
 }
 
 
@@ -625,6 +626,7 @@ position: absolute;
 left: 0;
 top: 0;
 height: 100%;
+border-radius: 2px;
 }
 
 
