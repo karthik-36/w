@@ -178,11 +178,17 @@ left: 0;
     width:auto;
     z-index: -100;
 }
-
-.vid-class{
-
+/*
+.video{
+z-index: 11350;
+width: 100%;
+height:100%;
+display: block;
+background-image:url('smalldots.png');
+background-repeat: repeat;
+position: relative;
 }
-
+*/
 #myVideo {
   position: fixed;
   right: 0;

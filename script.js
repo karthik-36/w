@@ -16,7 +16,7 @@ $('#registerform').submit(function(event) {
 
 var isSmall =false;
 var isMedium = false;
-var isLarge = false;
+var isLarge = true;
 document.onreadystatechange = function(e)
 {
     if (document.readyState === 'complete')
@@ -240,7 +240,7 @@ if(window.innerWidth >= 1300 && isLarge == false){
     videocontainer.load();
     videocontainer.play();
 
-}else if(isSmall == false){
+}else if(window.innerWidth <=600 && isSmall == false){
 	console.log(" set trigger small");
     videocontainer.pause();
     videosource.setAttribute('src', small);
