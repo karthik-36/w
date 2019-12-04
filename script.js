@@ -26,7 +26,7 @@ document.onreadystatechange = function(e)
 };
 
 console.log("alive");
-window.onscroll = function(){
+window.onscroll = function(){ 
 	const docScrollTop = document.documentElement.scrollTop;   
 	if(window.innerWidth>991){
 		if(docScrollTop>100){
@@ -66,7 +66,7 @@ var navbar = document.querySelector(".navbar");
 
 
    		this.classList.add("active");
-   		document.querySelector(".navbar").classList.toggle("show");
+   	//	document.querySelector(".navbar").classList.toggle("show");
 
    	})
    })
@@ -79,9 +79,11 @@ var navbar = document.querySelector(".navbar");
 const hamBurger = document.querySelector(".ham-burger");
 hamBurger.addEventListener("click",function(){
 	console.log("clicked");
-	document.querySelector(".navbar").classList.toggle("show");
-  document.getElementById(".navbar").classList.toggle("show");
-document.querySelector(".navbar").setAttribute("display","none");
+	//document.querySelector(".navbar").classList.toggle(".show");
+ //document.querySelector(".navbar").classList.toggle("none");
+ console.log(document.querySelector(".navbar").classList.toggle("show"));
+//  document.querySelector(".navbar").setAttribute("display","block");
+//document.querySelector(".navbar").setAttribute("display","none");
 })
 
 

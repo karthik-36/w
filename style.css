@@ -105,7 +105,7 @@ color: #ffffff;
 text-transform: uppercase;
 position: relative;
 }
-
+/*
 header .brand-name a::before{
 content: '';
 height: 3px;
@@ -115,7 +115,7 @@ position: absolute;
 left: 0px;
 bottom: 0px;
 }
-
+*/
 header .navbar{
 
 
@@ -1240,12 +1240,12 @@ font-size: 14px;
 	background-color: #ffffff;
 	text-align: center;
 	cursor: pointer;
-	display: none;
+	
 	border-radius: 3px;
 	color: #0000000;
 	line-height: 30px;
 	border: 1px solid #eeeeee;
-
+display: none;
 
 }
 
@@ -1372,7 +1372,7 @@ width: 100%;
 
 
 
-
+/*
 	.header{
 
 		padding: 15px;
@@ -1380,6 +1380,18 @@ width: 100%;
 		background-color: #ffffff;
 		border: none;
 		border-top: 1px solid #eeeeee;
+
+	}
+*/
+	header{
+	
+
+		padding: 15px;
+		position: fixed;
+		background-color: #000000;
+		border: none;
+		border-top: 1px solid #eeeeee;
+		z-index: 500px;
 	}
 
 	header .brand-name a{
@@ -1392,14 +1404,18 @@ width: 100%;
 	}
 
 	.navbar{
+		z-index: 500px;
 		position: absolute;
 		background-color: #000000;
 		width: 100%;
 		left: 0px;
-		top: 60px;
+		top: 75px;
 		padding:15px;
 		border-top: 1px solid #eeeeee;
 		display: none;
+	
+		
+		
 	}
 
 	.navbar .show{
