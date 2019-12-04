@@ -1298,6 +1298,8 @@ font-size: 50px;
 
 @media(max-width: 767px){
 
+
+
 .exprience {
     
     padding: 54px 10px;
@@ -1380,9 +1382,11 @@ width: 100%;
 		background-color: #ffffff;
 		border: none;
 		border-top: 1px solid #eeeeee;
+		display: none;
 
 	}
-*/
+
+
 	header{
 	
 
@@ -1391,9 +1395,9 @@ width: 100%;
 		background-color: #000000;
 		border: none;
 		border-top: 1px solid #eeeeee;
-		z-index: 500px;
+		
 	}
-
+*/
 	header .brand-name a{
 		color: #ffffff;
 
@@ -1403,8 +1407,8 @@ width: 100%;
 		display: inline-block;
 	}
 
-	.navbar{
-		z-index: 500px;
+	 .navbar{
+		
 		position: absolute;
 		background-color: #000000;
 		width: 100%;
@@ -1412,18 +1416,22 @@ width: 100%;
 		top: 75px;
 		padding:15px;
 		border-top: 1px solid #eeeeee;
+		overflow: hidden;
+		z-index: 500px;
 		display: none;
+	
 	
 		
 		
 	}
 
-	.navbar .show{
-		display: block;
+
+	 .navbar .show{
+		display: block !important;
 	}
 
 	header .navbar ul li{
-	display: block;
+	display: block; 
 	margin-left: 0;
 
 	}

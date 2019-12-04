@@ -81,9 +81,10 @@ hamBurger.addEventListener("click",function(){
 	console.log("clicked");
 	//document.querySelector(".navbar").classList.toggle(".show");
  //document.querySelector(".navbar").classList.toggle("none");
- console.log(document.querySelector(".navbar").classList.toggle("show"));
+ document.querySelector(".navbar").classList.toggle("show");
 //  document.querySelector(".navbar").setAttribute("display","block");
 //document.querySelector(".navbar").setAttribute("display","none");
+//document.getElementById("navbarID").setAttribute("padding" , );
 })
 
 
