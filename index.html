@@ -24,10 +24,15 @@ $('.menu').click(function(){
 	//$('.ul').toggleClass('active1');
 	if (isOpen == false) {
 	$('.navbar').slideDown();
+	$('#change-op').css("background-color","rgba(10,10,40,0.8)");
 	isOpen = true;
+
 	}else{
 	$('.navbar').slideUp();
-	isOpen = false;
+    isOpen = false;
+	setTimeout(function(){ $('#change-op').css("background-color","rgba(0,0,0,0)"); }, 500);
+	
+	
 	}
 	
 
@@ -39,6 +44,7 @@ $('.main-list').click(function(){
 var swidth = $(window).width();
 if(swidth<767){
 $('.navbar').slideUp("slow");
+setTimeout(function(){ $('#change-op').css("background-color","rgba(0,0,0,0)"); }, 500);
 }
 });
 
@@ -51,10 +57,22 @@ $(window).resize(function(){
 //console.log(swidth);
 if(swidth>767){
 		console.log("more than 767");
-	$('.navbar').show();
+	//	$('.navbar').slideUp();
+    //    isOpen = false;
+		$('#change-op').css("background-color","rgba(0,0,0,8)");
 
+	$('.navbar').show();
 	}
+	else{
+		$('#change-op').css("background-color","rgba(0,0,0,0)");
+				$('.navbar').hide();
+               isOpen = false;
+	}
+
 });
+
+
+
 
 
 
@@ -68,7 +86,7 @@ if(swidth>767){
 
 	<!-- header -->
 
-	<header class="header">
+	<header class="header" id="change-op">
 		<div class="container">
 			<div class="row">
 			<div class="brand-name" style="font-size: 35px">

@@ -63,11 +63,11 @@ margin: auto;
 }
 
 header{
-background-color: rgba(0,0,0,0.75);
+background-color: rgba(0,0,0,0.0);
 	position: absolute;
 	left: 0px;
 	right: 0px;
-	border-bottom: 1px solid #423940;
+
 	padding: 5px 15px;
 	z-index: 200;
 	 
@@ -114,6 +114,7 @@ header.fixed .brand-name a{
 }
 
 header .brand-name a{
+	background-color: rgba(0,0,0,0.4);
 	 border: 2px solid #ffffff;
 	 padding: 0px 10px;
 text-decoration: none;
@@ -1278,8 +1279,8 @@ display: none;
 .toggle{
 
 border-radius: 10px;
-		padding: 2px 4px;
-	background: #ff3214;
+	background: 	rgba(246, 173, 85,0.95);
+	
 	text-align: right !important;
 	box-sizing: border-box;
 	font-size: 20px;
