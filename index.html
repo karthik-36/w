@@ -23,10 +23,10 @@ $('.menu').click(function(){
 	console.log("clicked menu");
 	//$('.ul').toggleClass('active1');
 	if (isOpen == false) {
-	$('.navbar').show();
+	$('.navbar').slideDown();
 	isOpen = true;
 	}else{
-	$('.navbar').hide();
+	$('.navbar').slideUp();
 	isOpen = false;
 	}
 	
