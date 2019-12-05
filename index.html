@@ -35,6 +35,15 @@ $('.menu').click(function(){
 
 });
 
+$('.main-list').click(function(){
+
+$('.navbar').slideUp("slow");
+
+});
+
+
+
+
 
 $(window).resize(function(){
   var swidth = $(window).width();
@@ -78,7 +87,7 @@ if(swidth>767){
 
 			<div class="navbar" id="navbarID"> 
 			
-				<ul>
+				<ul class="main-list">
 				    <li><a href="#home" class="active">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#skills">Skills</a></li>
