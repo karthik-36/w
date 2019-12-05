@@ -36,9 +36,10 @@ $('.menu').click(function(){
 });
 
 $('.main-list').click(function(){
-
+var swidth = $(window).width();
+if(swidth<767){
 $('.navbar').slideUp("slow");
-
+}
 });
 
 
