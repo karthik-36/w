@@ -104,6 +104,7 @@ font-weight: 600;
 color: #ffffff;
 text-transform: uppercase;
 position: relative;
+
 }
 /*
 header .brand-name a::before{
@@ -131,6 +132,7 @@ header .navbar ul{
 header .navbar ul li{
 	display: inline-block;
 	margin-left: 35px;
+	flex: 0 0 100%;
 }
 
 header .navbar ul li a{
@@ -1252,6 +1254,52 @@ display: none;
 }
 
 
+.toggle{
+
+
+		padding: 8px 16px;
+	background: #ff3214;
+	text-align: right !important;
+	box-sizing: border-box;
+	font-size: 20px;
+	color: #fff;
+
+display: none;
+
+
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Responsive bolow 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
 @media(max-width: 1300px){
 
 
@@ -1299,6 +1347,64 @@ font-size: 50px;
 }
 
 @media(max-width: 767px){
+.header{
+	display: fixed;
+}
+.navbar{
+	display: none;
+}
+.toggle{
+	display: block;
+}
+
+.header ul{
+width: 100%;
+color: #ff0000;
+
+}
+
+header .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+color: #ff0000;
+text-align: center;
+
+
+/*display: flex;
+flex-direction: column; */
+}
+
+
+ 
+   header .navbar ul li  {
+ width: 100%;
+  margin-left:35px;
+
+}
+
+header .navbar ul li a.active::before {
+    width: 90%;
+    left: 0;
+    right: 0;
+}
+
+
+
+.active1{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
