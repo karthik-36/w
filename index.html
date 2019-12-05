@@ -29,9 +29,22 @@ $('.menu').click(function(){
 	$('.navbar').hide();
 	isOpen = false;
 	}
+	
 
 
-})
+
+});
+
+
+$(window).resize(function(){
+  var swidth = $(window).width();
+//console.log(swidth);
+if(swidth>767){
+		console.log("more than 767");
+	$('.navbar').show();
+
+	}
+});
 
 
 
@@ -44,7 +57,7 @@ $('.menu').click(function(){
   <div id="loading"></div> 
 
 	<!-- header -->
-	<header class=".header">
+	<header class="header">
 		<div class="container">
 			<div class="row">
 			<div class="brand-name" style="font-size: 35px">
@@ -58,6 +71,10 @@ $('.menu').click(function(){
 			<div class="toggle">
 				<i class="fa fa-bars menu" aria-hidden="true" ></i>
 			 </div>
+
+<!-- rm-->
+</div>
+
 			<div class="navbar" id="navbarID"> 
 			
 				<ul>
@@ -72,7 +89,7 @@ $('.menu').click(function(){
 		
 	
 			</div>
-		</div>
+		
 	</header>
 <!-- header end -->
 
