@@ -47,7 +47,7 @@ z-index: 300;
 }
 
 .container{
-max-width: 1140px;
+max-width: 1300px;
 
 margin: auto;
 
@@ -272,7 +272,7 @@ min-height: 100vh;
 }
 
 .home .home-content .block{
-	margin-left: 15%;
+	margin-left: 20%;
 	padding-right: 45px;
 	flex: 0 0 75%;
 	max-width: 75%;
@@ -976,6 +976,7 @@ margin-bottom: 35px;
 	padding-bottom: 35px;
 	padding-top: 20px;
 	background-color: rgba(0,0,0,0.1);
+	border-radius: 20px;
 	z-index: -1;
 	
 }
@@ -1005,6 +1006,7 @@ margin-bottom: 35px;
 	margin-bottom: 35px;
 	padding-bottom: 35px;
     background-color: rgba(0,0,0,0.1);
+    border-radius: 20px;
 	z-index: -1;
 
 }
@@ -1041,6 +1043,7 @@ margin-bottom: 35px;
 	margin-bottom: 35px;
 	padding-bottom: 35px;
 	background-color: rgba(0,0,0,0.1);
+	border-radius: 20px;
 	z-index: -1;
 }
 .projects .videos .project5 iframe{
@@ -1496,7 +1499,7 @@ min-height: 75vh;
 }
 
 	.projects .videos iframe{
-width: 100%;
+width: 96%;
 
 }
 
