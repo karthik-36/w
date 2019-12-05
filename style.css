@@ -1398,6 +1398,8 @@ width: 100%;
 		
 	}
 */
+
+/*
 	header .brand-name a{
 		color: #ffffff;
 
@@ -1419,9 +1421,6 @@ width: 100%;
 		overflow: hidden;
 		z-index: 500px;
 		display: none;
-	
-	
-		
 		
 	}
 
@@ -1444,7 +1443,10 @@ width: 100%;
 	header .navbar ul li a::before{
 	background-color: febd01;
 	}
+*/
 
+
+/* screw header */
 
 	.about-me .about-content .text{
 		flex: 0 0 100%;
