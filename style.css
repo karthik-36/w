@@ -241,7 +241,11 @@ background-position: center;
 .video{
  max-width: 100%;
   height: auto;
-
+/*poster="load1.gif" */
+background-image: url(load1.gif);
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  background-position: center;
     
 }
 
@@ -1464,6 +1468,8 @@ header .navbar ul li a.active::before {
 .video {
     max-width: 100%;
     height: auto;
+
+
    
 }
 
