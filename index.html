@@ -10,6 +10,9 @@
 	<script src="script.js"></script>
 <!--	<script src="jquery-3.4.1.min.js"></script> -->
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="http://code.jquery.com/color/jquery.color.min.js"></script>
+	<script src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
+
 	<script>
 $(document).ready(function(){
 var isOpen = false;
@@ -25,13 +28,17 @@ $('.menu').click(function(){
 	if (isOpen == false) {
 	$('.navbar').slideDown();
 	$('#change-op').css("background-color","rgba(10,10,40,0.8)");
+	//$('.toggle').css("background", "rgba(42, 176, 227, 0.95)");
+	//$('.toggle').animate({backgroundColor : "#f6ad55"}, 500);
+	  $(".toggle").transition({"-webkit-transform" : "rotate(45deg)",backgroundColor : "#f6ad55"},500);
 	isOpen = true;
 
 	}else{
 	$('.navbar').slideUp();
+	$(".toggle").transition({"-webkit-transform" : "rotate(180deg)",backgroundColor : "#2ab0e3"},500);
     isOpen = false;
 	setTimeout(function(){ $('#change-op').css("background-color","rgba(0,0,0,0)"); }, 500);
-	
+	//$('.toggle').animate({backgroundColor : "#2ab0e3"}, 500);
 	
 	}
 	
@@ -45,6 +52,7 @@ var swidth = $(window).width();
 if(swidth<767){
 $('.navbar').slideUp("slow");
 setTimeout(function(){ $('#change-op').css("background-color","rgba(0,0,0,0)"); }, 500);
+$(".toggle").transition({"-webkit-transform" : "rotate(180deg)",backgroundColor : "#2ab0e3"},500);
 }
 });
 
